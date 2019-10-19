@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchMultiButton">
+        <attr name="strokeRadius" format="dimension" />
+        <attr name="strokeSwitchWidth" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="selectedTab" format="integer" />
+        <attr name="selectedSwitchColor" format="color|reference" />
+        <attr name="switchTabs" format="reference" />
+        <attr name="typeface" format="string" />
+        <attr name="selectedTextColor" format="color|reference" />
+        <attr name="switchStrokeColor" format="color|reference" />
+    </declare-styleable>
+</resources>

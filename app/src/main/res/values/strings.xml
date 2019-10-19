@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Sana Gostar</string>
+    <string name="try_again_msg" translatable="false">ارتباط شما با اینترنت برقرار نیست، لطفا دوباره تلاش نمائید</string>
+    <string name="addding_error_401" translatable="false">لطفا دوباره در اپلیکیشن وارد شوید</string>
+    <string name="request_denied_msg" translatable="false">خطا در ارتباط با سرور، لطفا کمی بعد دوباره تلاش نمائید</string>
+    <string name="addding_error_417" translatable="false">این اطلاعات قبلا ثبت شده است</string> <!-- changed  -->
+    <string name="addding_error_406" translatable="false">اطلاعات ورودی غیر قابل قبول می باشد</string>
+    <string name="addrequest_error_416" translatable="false">محدوده غیر مجاز</string>
+    <string name="lastdata_incomplete_msg" translatable="false">اطلاعات وارد شده قبلی کامل نیست. ابتدا اطلاعات قبلی را تکمیل کنید.</string>
+    <string name="process_denied_request_msg" translatable="false">امکان انجام این عملیات وجود ندارد</string>
+    <string name="access_denied_request_msg" translatable="false">شما مجاز به انجام این عملیات نمی باشید</string>
+    <string name="item_is_used_msg" translatable="false">این آیتم هم اکنون در حال استفاده می باشد.</string>
+    <string name="version_update_msg" translatable="false">نسخه اپلیکیشن شما منسوخ شده است و امکان ادامه استفاده از آن وجود ندارد. لطفا آخرین نسخه را دریافت نمائید</string>
+    <string name="version_update_notforce_msg" translatable="false">نسخه جدیدی از اپلیکیشن دخل منتشر شده است. لطفا اپلیکیشن خود را بروزرسانی نمائید</string>
+    <string name="server_error_msg" translatable="false">خطا در ارتباط با سرور</string>
+    <string name="service_error_405" translatable="false">آیتم مورد نظر پیدا نشد</string>
+    <string name="service_error_400" translatable="false">اطلاعات ارسالی اشتباه است</string>
+    <string name="no_data_available_error_msg" translatable="false">اطلاعاتی  برای این مورد موجود نمی باشد.</string>
+    <string name="login_error_status" translatable="false">لطفا دوباره در اپلیکیشن وارد شوید</string>
+    <string name="check_net_msg" translatable="false" >خطا در ارتباط با سرور</string>
+    <string name="turnon_gps_msg" translatable="false">برای دسترسی به این بخش، قابلیت جی پی اس گوشی تلفن همراه خود را فعال کنید.</string>
+    <string name="female" translatable="false">زن</string>
+    <string name="male" translatable="false">مرد</string>
+    <string name="try_again" translatable="false">لطفا دوباره سعی کنید.</string>
+</resources>

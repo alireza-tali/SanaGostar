@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="200dp"
+    android:padding="32dp">
+    <TextView
+        android:id="@+id/message_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/ok_btn"
+        android:scrollbars="vertical"
+        android:textSize="@dimen/textsize_small"
+        android:textColor="@color/dark_text_color"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:textSize="@dimen/textsize_small"
+            android:text="خیر"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:text="بله"
+            android:textSize="@dimen/textsize_small"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

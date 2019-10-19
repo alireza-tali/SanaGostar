@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:id="@+id/title_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/grey_background"
+                android:padding="5dp"
+                android:paddingRight="10dp"
+                android:text="لطفا اطلاعات ورود خود را وارد نمایید."
+                android:textColor="@color/dark_text_color"
+                android:textSize="@dimen/textsize_big"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextAppearance="@style/TextAppearence.TextInputLayout.MyStyle2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_layout">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/name_edttxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_dark"
+                    android:gravity="top|right"
+                    android:hint="نام"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="@dimen/textsize_big" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lastname_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextAppearance="@style/TextAppearence.TextInputLayout.MyStyle2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_layout">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/lastname_edttxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_dark"
+                    android:gravity="top|right"
+                    android:hint="نام خانوادگی"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="@dimen/textsize_big" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextAppearance="@style/TextAppearence.TextInputLayout.MyStyle2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lastname_layout">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/phone_edttxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_dark"
+                    android:gravity="top|right"
+                    android:hint="تلفن همراه"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="@dimen/textsize_big" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextAppearance="@style/TextAppearence.TextInputLayout.MyStyle2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone_layout">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/address_edttxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_dark"
+                    android:gravity="top|right"
+                    android:hint="آدرس دقیق"
+                    android:maxLines="4"
+                    android:minLines="4"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="@dimen/textsize_big" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/gen_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_layout">
+
+                android:layout_alignParentRight="true" />-->
+
+                <vavkhan.com.sanagostar.utils.SwitchMultiButton
+                    android:id="@+id/gender_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    app:selectedSwitchColor="@color/colorPrimary"
+                    app:selectedTab="1"
+                    app:selectedTextColor="@color/background_color"
+                    app:strokeRadius="5dp"
+                    app:strokeSwitchWidth="1dp"
+                    app:switchStrokeColor="@color/colorPrimary"
+                    app:switchTabs="@array/switch_tabs"
+                    app:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/gender_switch"
+                    android:gravity="right"
+                    android:text="جنسیت"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="@dimen/textsize_small" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continiue_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="مرحله بعد"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gen_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
